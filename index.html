@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tripathi Tax Consultancy | Expert GST & Income Tax Services</title>
+  <meta name="description" content="Professional tax consultancy services in Prayagraj. GST filing, Income Tax returns, TDS/TCS compliance, and financial advisory services.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+         --primary: #f9dcc4;       /* Creamy Blush */
+  --primary-dark: #fec89a;  /* Peach */
+  --secondary: #ffb5a7;     /* Coral Pink */
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --light-gray: #e2e8f0;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: #f9fafb;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header Styles */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    
+    .tagline {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-top: 0.2rem;
+    }
+    
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav ul li {
+      margin-left: 2rem;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    nav ul li a:hover {
+      opacity: 0.9;
+    }
+    
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: white;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 10rem 0 6rem;
+      margin-top: 68px;
+    }
+    
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid white;
+      margin-left: 1rem;
+    }
+    
+    .btn-outline:hover {
+      background-color: white;
+      color: var(--primary);
+    }
+    
+    /* Section Styles */
+    section {
+      padding: 5rem 0;
+    }
+    
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    section h2::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    
+    /* Services Section */
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .service-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .service-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+    
+    /* Why Choose Us Section */
+    .why-us {
+      background-color: var(--light);
+    }
+    
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .benefit {
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .benefit-icon {
+      font-size: 1.5rem;
+      color: var(--secondary);
+      margin-right: 1rem;
+      margin-top: 0.3rem;
+    }
+    
+    .benefit-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .benefit-content p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+    
+    /* Team Section */
+    .team-members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .member-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .member-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .member-img {
+      height: 250px;
+      background-color: var(--light-gray);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .member-info {
+      padding: 1.5rem;
+    }
+    
+    .member-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .member-info p {
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .social-links a {
+      color: var(--gray);
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: var(--primary);
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+      background-color: var(--light);
+    }
+    
+    .testimonial-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .testimonial {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin: 2rem 0;
+      position: relative;
+    }
+    
+    .testimonial::before {
+      content: '\201C';
+      font-size: 5rem;
+      color: var(--light-gray);
+      position: absolute;
+      top: 0;
+      left: 10px;
+      line-height: 1;
+    }
+    
+    .testimonial p {
+      font-style: italic;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+    
+    .author-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--light-gray);
+      margin-right: 1rem;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .author-info h4 {
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    
+    .author-info p {
+      font-style: normal;
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin: 0;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+    
+    .contact-info {
+      margin-bottom: 2rem;
+    }
+    
+    .contact-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-icon {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-right: 1rem;
+      margin-top: 0.2rem;
+    }
+    
+    .contact-text h4 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+    
+    .contact-text p, .contact-text a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    
+    .contact-text a:hover {
+      color: var(--primary);
+    }
+    
+    .contact-form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid var(--light-gray);
+      border-radius: 4px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    /* FAQ Section */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 1rem;
+      border: 1px solid var(--light-gray);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 1.2rem;
+      background-color: white;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .faq-question:hover {
+      background-color: #f8fafc;
+    }
+    
+    .faq-question::after {
+      content: '+';
+      font-size: 1.2rem;
+    }
+    
+    .faq-question.active::after {
+      content: '-';
+    }
+    
+    .faq-answer {
+      padding: 0 1.2rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background-color: #f8fafc;
+    }
+    
+    .faq-answer.show {
+      padding: 1.2rem;
+      max-height: 500px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 4rem 0 2rem;
+    }
+    
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .footer-col h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .footer-col h3::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background-color: var(--primary);
+      bottom: -8px;
+      left: 0;
+    }
+    
+    .footer-col p {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: block;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+      transform: translateX(5px);
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid #334155;
+    }
+    
+    .footer-bottom p {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      
+      section {
+        padding: 4rem 0;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .logo {
+        margin-bottom: 1rem;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+      
+      .hero {
+        padding: 8rem 0 4rem;
+      }
+      
+      .hero h2 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .btn {
+        display: block;
+        width: 80%;
+        margin: 0 auto 1rem;
+      }
+      
+      .btn-outline {
+        margin-left: 0;
+      }
+      
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      
+      nav {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      
+      nav.show {
+        display: block;
+      }
+      
+      .hero {
+        padding: 7rem 0 3rem;
+      }
+      
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <div>
+            <svg width="300" height="90" viewBox="0 0 300 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Document Icon with Balance Scales -->
+  <rect x="20" y="15" width="70" height="60" rx="5" fill="#1A4B8C"/>
+  <path d="M55 25V65" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="55" cy="20" r="6" fill="#FFC107"/>
+  <circle cx="55" cy="70" r="6" fill="#FFC107"/>
+  
+  <!-- Gold Header Bar with Gradient -->
+  <rect x="20" y="15" width="70" height="15" fill="url(#gradient)" rx="5"/>
+  
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA000"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Perfectly Aligned Text -->
+  <text x="110" y="42" font-family="Poppins" font-size="26" font-weight="700" fill="#1A4B8C">TRIPATHI</text>
+  <text x="110" y="70" font-family="Poppins" font-size="20" font-weight="500" fill="#333">TAX CONSULTANCY</text>
+  
+  <!-- Dynamic Underline -->
+  <line x1="110" y1="75" x2="280" y2="75" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+</svg>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Expert Tax Consultation Services in Prayagraj</h2>
+      <p>We provide comprehensive GST, Income Tax, and financial advisory services to help businesses and individuals navigate India's complex tax landscape with confidence.</p>
+      <div>
+        <a href="#contact" class="btn">Get Free Consultation</a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Professional Services</h2>
+      <p class="section-subtitle">We offer a complete range of taxation and financial services tailored to your needs</p>
+      
+      <div class="services-container">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3>GST Filing & Compliance</h3>
+          <p>Professional GST registration, return filing (GSTR-1, GSTR-3B), refund claims, and compliance advisory services.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>Income Tax Returns</h3>
+          <p>Complete ITR filing for individuals and businesses with maximum refund guarantee and tax planning strategies.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h3>TDS/TCS Management</h3>
+          <p>End-to-end TDS/TCS compliance including return filing, certificate issuance, and quarterly compliance.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>Tax Advisory</h3>
+          <p>Expert legal advice on GST, Income Tax matters, tax planning, and representation before tax authorities.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Accounting Services</h3>
+          <p>Bookkeeping, financial statement preparation, and management reporting for businesses of all sizes.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Business Registration</h3>
+          <p>Company/LLP registration, GST registration, MSME registration, and other business compliance services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us" id="about">
+    <div class="container">
+      <h2>Why Choose Tripathi Tax Consultancy?</h2>
+      <p class="section-subtitle">We go beyond just filing returns to provide strategic tax solutions</p>
+      
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Max Refund Guarantee</h3>
+            <p>We ensure you claim every eligible deduction and credit to maximize your tax refunds.</p>
+          </div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-rupee-sign"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Transparent Pricing</h3>
+            <p>No hidden charges. Clear upfront pricing with no surprises.</p>
+          </div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Qualified Professionals</h3>
+            <p>Our team includes Chartered Accountants, Advocates, and tax experts with 10+ years experience.</p>
+          </div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Dedicated Support</h3>
+            <p>Personalized service with direct access to your tax consultant throughout the year.</p>
+          </div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Timely Filing</h3>
+            <p>We ensure all returns are filed well before deadlines to avoid penalties.</p>
+          </div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Data Security</h3>
+            <p>Your financial information is protected with bank-level encryption and confidentiality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team" id="team">
+    <div class="container">
+      <h2>Meet Our Expert Team</h2>
+      <p class="section-subtitle">Qualified professionals dedicated to your financial success</p>
+      
+      <div class="team-members">
+        <div class="member-card">
+          <div class="member-img" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+          <div class="member-info">
+            <h3>Adv. Adarsh Singh</h3>
+            <p>GST & ITR Legal Expert</p>
+            <p class="experience">10+ years experience</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="member-card">
+          <div class="member-img" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+          <div class="member-info">
+            <h3>Anoop Tripathi</h3>
+            <p>Senior Accountant</p>
+            <p class="experience">8+ years experience</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <p class="section-subtitle">Trusted by businesses and individuals in Prayagraj</p>
+      
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>"Tripathi Tax Consultancy has been handling our business taxes for 3 years. Their expertise in GST compliance saved us from multiple penalties. Highly recommended for any business owner."</p>
+          <div class="testimonial-author">
+            <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+            <div class="author-info">
+              <h4>Rajesh Verma</h4>
+              <p>Owner, Verma Traders</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <p>"As a salaried professional, I was always confused about tax saving options. Adarsh sir explained everything clearly and helped me save ₹28,000 in taxes this year. Excellent service!"</p>
+          <div class="testimonial-author">
+            <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');"></div>
+            <div class="author-info">
+              <h4>Priya Singh</h4>
+              <p>Bank Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <p class="section-subtitle">Find answers to common questions about our services</p>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">What documents do I need for ITR filing?</div>
+          <div class="faq-answer">
+            <p>For salaried individuals: Form 16, salary slips, investment proofs (LIC, PPF, etc.), rent receipts if HRA claimed, home loan interest certificate if applicable. For business owners: Bank statements, profit/loss statement, balance sheet, expense bills, and all tax deduction certificates.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">When is the due date for GST return filing?</div>
+          <div class="faq-answer">
+            <p>GSTR-1 (monthly filers): 11th of next month. GSTR-3B: 20th of next month. For quarterly filers under QRMP scheme: GSTR-1 by 13th of month after quarter, GSTR-3B by 22nd/24th of month after quarter. Annual return (GSTR-9) by December 31st.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">How much do your services cost?</div>
+          <div class="faq-answer">
+            <p>Our pricing is transparent and depends on the services you need. Basic ITR filing starts at ₹999, GST returns from ₹1499/month. We offer customized packages for businesses. Contact us for a free quote based on your specific requirements.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">Can you help if I have missed previous year filings?</div>
+          <div class="faq-answer">
+            <p>Yes, we specialize in belated and revised return filings. We can help you file past returns, minimize penalties, and bring your tax compliance up to date. The process involves gathering your past financial data and filing with proper disclosures.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">Do you provide tax planning services?</div>
+          <div class="faq-answer">
+            <p>Absolutely. We offer comprehensive tax planning for individuals and businesses to legally minimize tax liability. Our strategies include investment planning, business restructuring advice, and taking advantage of all available deductions and exemptions under Indian tax laws.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="section-subtitle">We're here to help with all your tax and financial needs</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>+91 8586902967</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <a href="mailto:luckytripathi768@gmail.com">luckytripathi768@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Office Address</h4>
+              <p>The Food Bazaar near Gurukul Montessori, Shantipuram, Prayagraj, Uttar Pradesh - 211013</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Working Hours</h4>
+              <p>Monday to Saturday: 10:00 AM - 7:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="consultationForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" class="form-control" required>
+                <option value="">Select a service</option>
+                <option value="gst">GST Filing</option>
+                <option value="itr">Income Tax Return</option>
+                <option value="tds">TDS/TCS Filing</option>
+                <option value="accounting">Accounting Services</option>
+                <option value="advisory">Tax Advisory</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" class="form-control"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map">
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.041474822693!2d81.8542143150141!3d25.46898398376927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI4JzA4LjQiTiA4McKwNTEnMjEuNiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Tripathi Tax Consultancy</h3>
+          <p>Your trusted partner for all tax and financial needs in Prayagraj. We provide expert guidance to help you navigate complex tax regulations with ease.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="#">GST Filing</a></li>
+            <li><a href="#">Income Tax Returns</a></li>
+            <li><a href="#">TDS/TCS Compliance</a></li>
+            <li><a href="#">Tax Advisory</a></li>
+            <li><a href="#">Business Registration</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for tax updates and financial tips.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" class="form-control" required>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tripathi Tax Consultancy. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ef4444;"></i> by Tripathi Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('show');
+    });
+    
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        question.classList.toggle('active');
+        
+        if (question.classList.contains('active')) {
+          answer.classList.add('show');
+        } else {
+          answer.classList.remove('show');
+        }
+        
+        // Close other open FAQs
+        faqQuestions.forEach(q => {
+          if (q !== question && q.classList.contains('active')) {
+            q.classList.remove('active');
+            q.nextElementSibling.classList.remove('show');
+          }
+        });
+      });
+    });
+    
+    // Form Submission
+    const consultationForm = document.getElementById('consultationForm');
+    
+    consultationForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value;
+      
+      // Here you would typically send this data to your server
+      // For demo, we'll just show an alert
+      alert(`Thank you, ${name}! Your consultation request for ${service} has been received. We'll contact you shortly at ${phone} or ${email}.`);
+      
+      // Reset form
+      consultationForm.reset();
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (mainNav.classList.contains('show')) {
+            mainNav.classList.remove('show');
+          }
+        }
+      });
+    });
+    
+    // Add shadow to header on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+      } else {
+        header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      }
+    });
+  </script>
+</body>
+</html>
