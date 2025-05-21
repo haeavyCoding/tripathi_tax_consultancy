@@ -1,12 +1,12 @@
 
     :root {
-         --primary: #f3be93;       /* Creamy Blush */
-  --primary-dark: #d66d10;  /* Peach */
+         --primary: #f3cdae;       /* Creamy Blush */
+  --primary-dark: #f09647;  /* Peach */
   --secondary: #ffb5a7;     /* Coral Pink */
       --dark: #1e293b;
-      --light: #f8fafc;
+      --light: #f2f5f7;
       --gray: #64748b;
-      --light-gray: #e2e8f0;
+      --light-gray: #bdbfc2;
     }
     
     * {
